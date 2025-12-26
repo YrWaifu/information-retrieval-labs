@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtualenv
+venv/
+.venv/
+
+# Generated corpora & artifacts
+corpus/
+tokens/
+tokens_tmp/
+stems/
+index/
+
+# Big derived files
+stems.txt
+tokens.txt
+freq.tsv
+zipf.png
+report_figs/
+
+# Binaries
+tokenize
+stem
+build_index
+boolean_search
+*.exe
+*.out
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
