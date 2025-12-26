@@ -15,14 +15,14 @@ API_URL = "https://en.wikipedia.org/w/api.php"
 # -----------------------------
 # Настройки
 # -----------------------------
-ROOT_CATEGORY = "Category:Video games"  # корневая категория на enwiki
-TARGET_DOCS = 30000                    # для "на 3": 30000..50000
+ROOT_CATEGORY = "Category:Video games"
+TARGET_DOCS = 30000                   
 MAX_DEPTH = 6
 MIN_CHARS = 200
 OUT_DIR = "corpus"
 META_PATH = "meta.tsv"
 
-BATCH_SIZE = 50                        # можно 30..50; 100 рискованнее
+BATCH_SIZE = 50                       
 REQUEST_PAUSE = 0.08
 
 MAX_RETRIES = 6
@@ -258,6 +258,7 @@ def main():
 
     finally:
         meta_f.close()
+
 
 
 if __name__ == "__main__":

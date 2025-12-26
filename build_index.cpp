@@ -14,7 +14,6 @@ struct Pair {
 };
 
 static uint32_t parse_doc_id_from_filename(const fs::path& p) {
-    // stems/000123.stm -> 123
     std::string stem = p.stem().string();
     size_t i = 0;
     while (i < stem.size() && stem[i] == '0') i++;
@@ -81,7 +80,6 @@ int main(int argc, char** argv) {
         }
         if (terms.empty()) continue;
 
-        // уникализация термов в документе
         std::sort(terms.begin(), terms.end());
         terms.erase(std::unique(terms.begin(), terms.end()), terms.end());
 
@@ -118,7 +116,6 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    // сохраняем maxDoc для корректного NOT
     maxdoc << maxDoc << "\n";
 
     dict << "term\tdf\toffset\tlen\n";

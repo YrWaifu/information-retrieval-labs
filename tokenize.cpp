@@ -8,7 +8,6 @@
 
 namespace fs = std::filesystem;
 
-// ASCII-lower для стабильности и простоты (в отчёте так и пишешь).
 static inline char to_lower_ascii(char c) {
     if (c >= 'A' && c <= 'Z') return static_cast<char>(c - 'A' + 'a');
     return c;
@@ -37,8 +36,6 @@ std::vector<std::string> tokenize_stream(std::istream& in, std::size_t min_len =
         if (is_alnum_ascii(c)) {
             cur.push_back(to_lower_ascii(c));
         } else if (keep_hyphen && c == '-') {
-            // дефис разрешаем только если он "внутри слова": ...a- b...
-            // то есть: предыдущий символ был alnum и следующий будет alnum
             if (!cur.empty()) {
                 char next = static_cast<char>(in.peek());
                 if (is_alnum_ascii(next)) {
@@ -47,7 +44,6 @@ std::vector<std::string> tokenize_stream(std::istream& in, std::size_t min_len =
                     flush();
                 }
             } else {
-                // дефис в начале токена игнорируем
             }
         } else {
             if (!cur.empty()) flush();

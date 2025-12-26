@@ -41,7 +41,6 @@ static std::vector<std::string> tokenize_query(const std::string& q) {
     return out;
 }
 
-// операции над отсортированными списками docID
 static std::vector<uint32_t> op_and(const std::vector<uint32_t>& a, const std::vector<uint32_t>& b) {
     std::vector<uint32_t> r;
     r.reserve(std::min(a.size(), b.size()));
