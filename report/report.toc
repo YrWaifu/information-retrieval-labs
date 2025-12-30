@@ -1,0 +1,14 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Цель и общая постановка задач}{2}{section.1}%
+\contentsline {section}{\numberline {2}Лабораторная работа \textnumero 1. Добыча корпуса документов}{3}{section.2}%
+\contentsline {subsection}{\numberline {1}Описание данных}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2}Примеры существующих поисковых систем}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {3}Ключевые фрагменты кода}{7}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Лабораторная работа \textnumero 2. Анализ статистических свойств корпуса}{9}{section.3}%
+\contentsline {subsection}{\numberline {1}Ключевые фрагменты кода}{10}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Лабораторная работа \textnumero 3. Индексация корпуса документов}{11}{section.4}%
+\contentsline {subsection}{\numberline {1}Ключевые фрагменты кода}{12}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Лабораторная работа \textnumero 4. Реализация булевого поиска}{13}{section.5}%
+\contentsline {subsection}{\numberline {1}Ключевые фрагменты кода}{14}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Лабораторная работа \textnumero 5. Статистика работы системы}{15}{section.6}%
+\contentsline {section}{\numberline {7}Заключение}{16}{section.7}%
